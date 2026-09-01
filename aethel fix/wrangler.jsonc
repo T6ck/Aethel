@@ -1,0 +1,16 @@
+{
+  // Workers static assets. This is what the failing build was missing:
+  // `wrangler deploy` with no assets directory configured has nothing to
+  // serve, which is the "Could not detect a directory containing static
+  // files" error.
+  //
+  // ./out is where `next build` writes, because next.config.mjs sets
+  // output: 'export'. The build command must run before this.
+  "name": "aetheldashboard",
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    "directory": "./out"
+  },
+  "workers_dev": true,
+  "preview_urls": false
+}
