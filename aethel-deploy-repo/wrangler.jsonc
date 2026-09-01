@@ -1,0 +1,23 @@
+{
+  // ── THE NAME DECIDES THE URL ────────────────────────────────
+  // This Worker deploys to:
+  //     https://<name>.<your-subdomain>.workers.dev
+  //
+  // With the name below that is:
+  //     https://aethel.dtackman23.workers.dev
+  //
+  // If Cloudflare already made you a Worker with a random name like
+  // "divine-dust-fe5a", either change this name to match it, or delete
+  // that Worker and use the URL this name produces. A 404 on a
+  // workers.dev URL almost always means you are looking at a different
+  // Worker than the one you deployed.
+  "name": "aethel",
+
+  "compatibility_date": "2026-08-01",
+
+  // ./out is committed to this repo, so no build step is required.
+  "assets": { "directory": "./out" },
+
+  "workers_dev": true,
+  "preview_urls": false
+}
