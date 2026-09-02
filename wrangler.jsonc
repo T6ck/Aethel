@@ -1,0 +1,6 @@
+{
+  "name": "groundplane",
+  "compatibility_date": "2026-08-01",
+  "assets": { "directory": "./out" },
+  "workers_dev": true
+}
